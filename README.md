@@ -1,11 +1,12 @@
 # equipos_api
 
-API REST de **Equipos y Jugadores** hecha con **Node + Express + SQLite** (better-sqlite3).
+API REST de **Equipos y Jugadores** hecha con **Node + Express + SQLite**
+(`node:sqlite`, el módulo integrado de Node, sin dependencias nativas).
 Es la API que consume la app Flutter `equipos_app`.
 
 ## Requisitos
 
-- Node.js 18 o superior.
+- Node.js 22.5 o superior (recomendado **Node 24**, por el módulo `node:sqlite`).
 
 ## Instalación y ejecución local
 

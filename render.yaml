@@ -9,6 +9,6 @@ services:
     startCommand: npm start
     healthCheckPath: /
     envVars:
-      # Fijamos Node 20 (LTS) para asegurar el binario precompilado de better-sqlite3.
+      # Node 24: incluye el módulo integrado node:sqlite sin necesidad de flags.
       - key: NODE_VERSION
-        value: "20"
+        value: "24"
