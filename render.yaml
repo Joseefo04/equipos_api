@@ -1,0 +1,14 @@
+# Blueprint de Render. Con este archivo, en Render puedes elegir
+# "New > Blueprint", apuntar a este repositorio y se configura todo solo.
+services:
+  - type: web
+    name: equipos-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      # Fijamos Node 20 (LTS) para asegurar el binario precompilado de better-sqlite3.
+      - key: NODE_VERSION
+        value: "20"
